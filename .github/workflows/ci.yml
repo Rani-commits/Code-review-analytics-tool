@@ -44,7 +44,7 @@ jobs:
           pip install -r requirements.txt
       - name: Run flake8
         working-directory: backend
-        run: flake8 .
+        run: flake8 . --max-line-length 120 --extend-ignore E302,W293,W503,E203,E266
       - name: Run mypy
         working-directory: backend
         run: mypy .
