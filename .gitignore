@@ -28,9 +28,3 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Local installers and portable tools
-installers/
-tools/
-*.exe
-*.msi
