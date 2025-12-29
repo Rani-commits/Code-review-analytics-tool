@@ -1,0 +1,21 @@
+==================================================================
+           🚀 HOW TO UPLOAD YOUR CODE TO GITHUB 🚀
+==================================================================
+
+Everything is set up! The only thing missing is your permission.
+
+Since I am an AI, I cannot enter your GitHub password for you.
+You need to do this one final step manually.
+
+👉 STEP 1:
+   Double-click the file named "push_to_github.bat" in this folder.
+
+👉 STEP 2:
+   A window will appear.
+   - If a browser window opens, sign in to GitHub.
+   - If it asks for a "Token" in the black window, paste your GitHub Personal Access Token.
+
+That's it! Your code will be uploaded to:
+https://github.com/Rani-commits/Code-review-analytics-tool.git
+
+==================================================================

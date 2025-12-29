@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+openai
+langchain
+httpx
+flake8
+black
+mypy
+bandit
