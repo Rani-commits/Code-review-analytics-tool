@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import routes
+import os
 
 app = FastAPI(
     title="Automated Code Review System",
@@ -9,10 +10,14 @@ app = FastAPI(
 )
 
 # CORS Configuration
-origins = [
-    "http://localhost:5173",  # Vite default
-    "http://localhost:3000",
-]
+origins_env = os.getenv("FRONTEND_ORIGINS")
+if origins_env:
+    origins = [o.strip() for o in origins_env.split(",") if o.strip()]
+else:
+    origins = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+    ]
 
 app.add_middleware(
     CORSMiddleware,
